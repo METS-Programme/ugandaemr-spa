@@ -1,14 +1,11 @@
-import {
-  getAsyncLifecycle,
-} from '@openmrs/esm-framework';
+import { getAsyncLifecycle } from '@openmrs/esm-framework';
 
 const importTranslation = require.context('../translations', false, /.json$/, 'lazy');
 
 const backendDependencies = {};
-const moduleName = '@uganda/esm-cervical-cancer-app'
+const moduleName = '@uganda/esm-cervical-cancer-app';
 
 function setupOpenMRS() {
-
   return {
     pages: [
       {
@@ -21,9 +18,7 @@ function setupOpenMRS() {
         offline: true,
       },
     ],
-    extensions: [
-      
-    ],
+    extensions: [],
   };
 }
 
